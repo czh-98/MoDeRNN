@@ -1,0 +1,24 @@
+python train.py \
+--model 'MoDeRNN' \
+--dataset 'mmnist' \
+--data_root '/home/dyt/czh/code/data/Moving_MNIST' \
+--lr 0.001 \
+--batch_size 32 \
+--epoch_size 200 \
+--input_nc 1 \
+--output_nc 1 \
+--load_size 720 \
+--image_width 64 \
+--image_height 64 \
+--patch_size 4 \
+--rnn_size 64 \
+--rnn_nlayer 4 \
+--filter_size 3 \
+--seq_len 10 \
+--pre_len 10 \
+--eval_len 10 \
+--criterion 'MSE&L1' \
+--lr_policy 'cosine' \
+--total_epoch 400 \
+--data_threads 4 \
+--optimizer adamw
